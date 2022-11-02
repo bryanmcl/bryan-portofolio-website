@@ -46,7 +46,7 @@ function Project(){
                     <h2 className="text-white font-bold text-3xl">HIMTI</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-10 mt-5 justify-center items-center overflow-x-auto project-cards overflow-y-hidden py-5">
+                <div className="flex gap-10 mt-5 items-center overflow-x-auto project-cards overflow-y-hidden py-5">
                     {projectHimti}
                 </div>
             </div>
@@ -56,7 +56,7 @@ function Project(){
                     <h2 className="text-white font-bold text-3xl">Assignment</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-10 mt-5 justify-center items-center overflow-x-auto project-cards overflow-y-hidden py-5">
+                <div className="flex gap-10 mt-5 items-center overflow-x-auto project-cards overflow-y-hidden py-5">
                   {projectAssignment}
                 </div>
             </div>
