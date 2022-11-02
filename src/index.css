@@ -12,23 +12,29 @@ body {
     -webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
 }
 
-.no-scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-  }
-.no-scroll::-webkit-scrollbar {
-  display: none; 
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.hid {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
 }
 
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(251 191 36);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(187, 112, 37);
+}
+
+.project-cards::-webkit-scrollbar  {
+  margin-top: 10px;
+  height: 8px;
 }

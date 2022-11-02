@@ -1,9 +1,32 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import gamecounter from "../assets/gamecounter.jpg"
-import blackjack from "../assets/blackjack.jpg"
+import projectData from "./ProjectData"
 
 function Project(){
+    const projectPersonal = projectData[0].map(item =>{
+        return(
+            <ProjectCard
+                key = {item.id}
+                data = {item}
+            />
+        )
+    })
+    const projectHimti = projectData[1].map(item =>{
+        return(
+            <ProjectCard
+                key = {item.id}
+                data = {item}
+            />
+        )
+    })
+    const projectAssignment = projectData[2].map(item =>{
+        return(
+            <ProjectCard
+                key = {item.id}
+                data = {item}
+            />
+        )
+    })
     return(
         <div id="project" className="flex flex-col pt-24 px-20">
             <h1 data-aos="fade-right" className="text-white text-5xl font-bold underline decoration-amber-400 w-fit">Project List</h1>
@@ -13,9 +36,8 @@ function Project(){
                     <h2 className="text-white font-bold text-3xl">Personal Project</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-10 mt-5">
-                    <ProjectCard delay = "0" fotoweb = {gamecounter} name="Game Counter" url= "https://bryan-gamecounter.netlify.app/"/>
-                    <ProjectCard delay = "100" fotoweb = {blackjack} name="Blackjack" url= "https://bryan-blackjack.netlify.app/"/>
+                <div className="flex gap-10 mt-5 items-center overflow-x-auto project-cards overflow-y-hidden py-5" >
+                    {projectPersonal}
                 </div>
             </div>
             <div className="mt-5">
@@ -24,9 +46,8 @@ function Project(){
                     <h2 className="text-white font-bold text-3xl">HIMTI</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-10 mt-5">
-                    <ProjectCard delay = "0" fotoweb = {gamecounter} name="Game Counter" url= "https://bryan-gamecounter.netlify.app/"/>
-                    <ProjectCard delay = "100" fotoweb = {blackjack} name="Blackjack" url= "https://bryan-blackjack.netlify.app/"/>
+                <div className="flex flex-wrap gap-10 mt-5 justify-center items-center overflow-x-auto project-cards overflow-y-hidden py-5">
+                    {projectHimti}
                 </div>
             </div>
             <div className="mt-5">
@@ -35,9 +56,8 @@ function Project(){
                     <h2 className="text-white font-bold text-3xl">Assignment</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-10 mt-5">
-                    <ProjectCard delay = "0" fotoweb = {gamecounter} name="Game Counter" url= "https://bryan-gamecounter.netlify.app/"/>
-                    <ProjectCard delay = "100" fotoweb = {blackjack} name="Blackjack" url= "https://bryan-blackjack.netlify.app/"/>
+                <div className="flex flex-wrap gap-10 mt-5 justify-center items-center overflow-x-auto project-cards overflow-y-hidden py-5">
+                  {projectAssignment}
                 </div>
             </div>
         </div>
