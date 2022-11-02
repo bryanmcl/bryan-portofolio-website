@@ -6,7 +6,7 @@ import github from "../assets/github.png"
 
 function Footer(){
     return(
-        <footer className="bg-black flex items-center py-4 px-5">
+        <footer id="contact" className="bg-black flex items-center py-4 px-5">
             <p className="text-amber-400 font-bold mr-auto">© 2022 Bryan Miraclo</p>
             <div className="flex gap-4">
                 <a href="https://www.instagram.com/bryan.mcl/?hl=en" target = "_blank"><img className="w-7 bg-amber-400 p-1 rounded-md" src={instagram} alt="" /></a>

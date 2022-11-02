@@ -12,7 +12,7 @@ function Navbar() {
                 <li ><a className="text-white hover:text-amber-400" href="#about">About</a></li>
                 <li ><a className="text-white hover:text-amber-400" href="#skill">Skill</a></li>
                 <li ><a className="text-white hover:text-amber-400" href="#project">Project</a></li>
-                <li ><a className="text-white hover:text-amber-400" href="#">Contact</a></li>
+                <li ><a className="text-white hover:text-amber-400" href="#contact">Contact</a></li>
             </ul>
         </nav>
     )
