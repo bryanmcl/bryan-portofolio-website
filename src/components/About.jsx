@@ -6,8 +6,8 @@ function About(){
         <div id="about" className="flex flex-col pt-24 px-20">
             <h1 data-aos="fade-right" className="text-white text-5xl font-bold underline decoration-amber-400 w-fit px-5 py-2">About Me</h1>
             <div data-aos="fade-right" className="box text-white w-[80vw]mt-10 p-5 pl-24 text-2xl">
-                Hello! My name is Bryan Miraclo and I am a univeristy student currently studying at Bina Nusantara University.
-                I am majoring in Computer Science on the 5th Semester. I also participate in a couple organization which is BNCC and HIMTI.
+                Hello! My name is Bryan Miraclo and I am a university student currently studying at Bina Nusantara University.
+                I am on the 5th semester majoring in Computer Science. I also participate in a couple organization which are BNCC and HIMTI.
                 <br/>
                 <br/>
                 <span  className="bg-amber-400 text-[rgb(28,28,28)]">In my first year,</span> I joined BNCC as an activist. I am able to participate in various of training such as Leadership, Public Speaking, Teamwork, and Time Management. Apart from soft skills,
